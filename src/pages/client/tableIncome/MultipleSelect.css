@@ -1,0 +1,10 @@
+/*eslint-disable-next-line*/
+.MuiPopover-paper {
+   overflow: hidden;
+   display: flex;
+}
+
+/*eslint-disable-next-line*/
+.MuiPaper-elevation1 {
+   flex: 1 1;
+}

@@ -1,0 +1,9 @@
+
+.focusStyle {
+  caret-color: transparent;
+}
+
+.focusStyle::selection {
+  background: transparent;
+}
+

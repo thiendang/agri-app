@@ -1,0 +1,315 @@
+@import '~react-quill/dist/quill.snow.css';
+@import '~quill-emoji/dist/quill-emoji.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/*eslint-disable-next-line*/
+.MuiBreadcrumbs-root .MuiTypography-root.MuiLink-root {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*eslint-disable-next-line*/
+.searchStyle .MuiInput-root:before {
+  border: none;
+}
+
+/*eslint-disable-next-line*/
+.PrivateSwipeArea-root {
+  z-index: 1101;
+}
+
+:root {
+  --amplify-primary-color: rgb(107, 146, 65);
+  --amplify-primary-tint: #85AC5B;
+  --amplify-primary-shade: #527928;
+  --amplify-secondary-tint: #527928;
+  --amplify-tertiary-color: #000000;
+  /*--amplify-components-link-visited-color: #769548;*/
+  /*--amplify-components-link-color: #85AC5B;*/
+  /* Scale will be programmatically set to SCALE_APP */
+  --scale-app: 0.75;
+}
+
+.amplify-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.amplify-link:visited {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.amplify-link:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+details:focus {
+  outline: none;
+}
+
+summary:focus {
+  outline: none;
+}
+
+/*eslint-disable-next-line*/
+body:not(.user-is-tabbing) button:focus,
+  /*eslint-disable-next-line*/
+body:not(.user-is-tabbing) input:focus,
+  /*eslint-disable-next-line*/
+body:not(.user-is-tabbing) select:focus,
+  /*eslint-disable-next-line*/
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
+.title-page {
+  /*font-family: Inter, Arial, sans-serif;*/
+  /*font-size: 28px;*/
+  font-weight: 500;
+  /*SCALE_APP * 34*/
+  line-height: calc(var(--scale-app) * 34px);
+  letter-spacing: 0;
+  text-align: left;
+  user-select: none;
+}
+
+/*SCALE_APP * 20*/
+.title-page-margin {
+  margin-bottom: calc(var(--scale-app) * 20px);
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.subheading-small {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.011em;
+}
+
+.subheading-smallest {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.011em;
+}
+
+/*eslint-disable-next-line*/
+.MuiInputBase-input.MuiOutlinedInput-input {
+  /*SCALE_APP * 8.5*/
+  padding-top: calc(var(--scale-app) * 8.5px);
+  /*SCALE_APP * 8.5*/
+  padding-bottom: calc(var(--scale-app) * 8.5px);
+}
+
+/*eslint-disable-next-line*/
+.MuiPaper-root.MuiDialog-paper {
+  background-color: #ffffff;
+}
+
+.subheading-bold {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.011em;
+}
+
+/*eslint-disable-next-line*/
+.MuiPaper-root.MuiDialog-paper {
+  background-color: #ffffff;
+}
+
+.ql-container.ql-snow {
+  border-width: 0 !important;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.dark .ql-container.ql-snow {
+  background-color: #303030;
+}
+
+.ql-toolbar.ql-snow {
+  border-width: 0 !important;
+}
+
+.ql-editor {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ql-snow .ql-stroke {
+  fill: none;
+  stroke: #769548 !important;
+}
+
+.ql-icon {
+  padding-left: 0 !important;
+}
+
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: #769548 !important;
+}
+
+.ql-snow.ql-toolbar button.ql-active .ql-stroke {
+  stroke: #000000;
+}
+
+.ql-snow.ql-toolbar button.ql-active .ql-fill {
+  fill: #000000;
+  stroke: #000000;
+}
+
+.ql-snow.ql-toolbar button:hover {
+  stroke: #06c !important;
+}
+
+.button-title {
+  white-space: nowrap;
+}
+
+.ql-snow .ql-tooltip[data-mode=link]::before {
+  content: "Link" !important;
+}
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after{
+  color: #769548
+}
+
+.ql-snow a {
+  color: #769548 !important;
+}
+
+.ql-snow a:hover {
+  background-color: #F1F4ED;
+}
+
+.ql-tooltip.ql-editing:not(.ql-hidden) {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+  margin-left: 0
+}
+
+.ql-tooltip.ql-editing:not(.ql-hidden) input {
+  border-radius: calc(var(--scale-app) * 6px);
+
+}
+.ql-tooltip {
+  border-radius: calc(var(--scale-app) * 10px);
+  /*display: flex;*/
+  /*align-items: center;*/
+}
+.ql-tooltip.ql-editing:not(.ql-hidden) input:focus {
+  /*border: 2px solid #769548 !important;*/
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-action {
+  width: fit-content;
+  padding: 0 4px;
+  margin-top: 4px;
+}
+
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action:hover:after {
+  background-color: #F1F4ED;
+}
+
+.ql-snow button{
+  margin-right: 4px;
+}
+
+.ql-snow button:hover {
+  border-radius: 5px;
+  background-color: #F1F4ED;
+}
+
+.ql-snow button.ql-active {
+  border: 1px solid #527928;
+  border-radius: 5px;
+  background-color: #F1F4ED;
+}
+
+.ql-container.ql-snow .ql-editor{
+  border: 2px solid transparent !important;
+  border-radius:  calc(var(--scale-app) * 10px);
+}
+.ql-container.ql-snow .ql-editor:focus{
+  /*border: 2px solid #769548 !important;*/
+}
+
+.ql-snow .ql-tooltip a.ql-action {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-action {
+  margin-left: 0 !important;
+}
+
+.ql-snow .ql-tooltip a.ql-action::after {
+  border-right: 1px solid #ccc;
+  content: 'Edit';
+  margin-left: 0;
+  padding-left: 8px !important;;
+  padding-right: 8px !important;;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #527928;
+  border-radius: 8px;
+  border: transparent;
+}
+
+fieldset::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+}
+div::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+}
+
+
+/* Classes to prevent the scrollbar from displaying in tables with table-container class. Add the no-scrollbar class. */
+.no-scrollbar .table-container {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.no-scrollbar .table-container::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}

@@ -1,0 +1,239 @@
+
+:root, [data-amplify-theme] {
+  --amplify-components-authenticator-footer-padding-bottom: var(--amplify-space-small);
+  --amplify-components-flex-gap: 48px;
+}
+
+
+
+.amplify-tabs[role=tablist] {
+  border-bottom: 1px solid  lightgray;
+
+}
+.amplify-tabs-item[data-state=active] {
+  border-color: #527928;
+  border-top: none;
+  border-bottom: 2px solid  #527928
+}
+
+
+[data-amplify-container] {
+  height: 100%;
+}
+
+[data-amplify-router] {
+  overflow: hidden;
+}
+
+[data-amplify-router] > [data-orientation="horizontal"] {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.amplify-button--link {
+  color: #527928;
+}
+
+.amplify-button--link:hover {
+  color: #527928;
+ background-color: rgba(223,235,209,0.35);
+}
+
+div[data-amplify-container] {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: var(--box-shadow, 1px 1px 4px 0 rgba(0, 0, 0, 0.35));
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+  border-radius: 20px;
+  overflow: hidden;
+  max-height: 100%;
+  margin: 16px auto;
+}
+
+
+.amplify-view {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+[data-amplify-authenticator] {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+[data-amplify-authenticator] [data-amplify-router] {
+  background-color: var(--amplify-components-authenticator-router-background-color);
+  box-shadow: unset;
+  border-color: unset;
+  border-width: unset;
+  border-style: unset;
+}
+
+
+.login-border {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.amplify-select {
+  margin-left: 2px;
+  display: inline-block;
+  height: calc(100% - 1px) !important;
+}
+
+.amplify-input{
+  border-radius: 8px;
+  margin-left: 2px;
+  /*margin-top: 1px;*/
+  margin-bottom: 1px;
+  width: calc(100% - 4px);
+}
+
+.amplify-input[autocomplete="username"]{
+  border-start-start-radius: 8px !important;
+  border-end-start-radius: 8px !important;;
+}
+
+.amplify-input[autocomplete="new-password"]{
+  border-start-start-radius: 8px !important;
+  border-end-start-radius: 8px !important;;
+}
+
+.amplify-button--small{
+  border-radius: 8px;
+  height: calc(100% - 1px) !important;
+  margin-left: -2px;
+}
+.amplify-field__show-password:not(.amplify-button--small){
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: calc(100% - 1px) !important;
+  margin-left: -3px;
+  margin-right: 2px;
+  margin-bottom: 1px;
+}
+.amplify-field__show-password.amplify-button--small{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: calc(100% - 1px) !important;
+  margin-top: -1px;
+  margin-left: -3px;
+  margin-right: 2px;
+}
+
+.amplify-button:not(.amplify-field__show-password){
+  border-radius: 8px;
+}
+
+.amplify-button--primary:focus {
+  background-color: #39600F;
+}
+
+[data-amplify-authenticator] [data-amplify-form] {
+  padding-top: 8px !important;;
+  padding-bottom: 8px !important;
+  overflow: hidden;
+}
+
+.styled-text {
+  font-weight: var(--amplify-font-weights-bold);
+  text-decoration: underline;
+}
+
+.styled-link {
+  text-decoration: underline;
+}
+
+select[name="country_code"]{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.amplify-select:not([name="country_code"]){
+  border-radius: 8px;
+}
+
+.amplify-flex:not(.amplify-field, .amplify-radio__button) {
+  row-gap: 12px !important;
+  height: 100%;
+  overflow: auto;
+}
+
+.label-bold > .amplify-label{
+  font-weight: bold !important;
+}
+
+/*firefox changes*/
+
+[data-amplify-authenticator]  .MuiStack-root > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
+    flex: 1 1 auto;
+    overflow: hidden;
+    display: flex;
+  }
+
+.amplify-view {
+  /* height: 100%; */
+}
+
+[data-amplify-authenticator] .MuiStack-root > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) {
+  height: 100%;
+  overflow: hidden;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-state=active]{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+
+[data-amplify-router-content]{
+  overflow: hidden;
+  height: 100%;
+}
+
+[data-amplify-router-content] > div:nth-child(1) {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-amplify-router-content] > div:nth-child(1) > form:nth-child(2) {
+  overflow: hidden;
+  flex: 1 1;
+}
+
+.login-border {
+  flex: 0 0 auto;
+}
+
+fieldset.amplify-flex {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+fieldset.amplify-flex > div:nth-child(1) {
+  flex: 1 1;
+  overflow: hidden;
+}
+
+button.amplify-button:nth-child(2) {
+  flex: 0 0 auto;
+}
+
+.clientSetupProgressFrame .MuiPaper-root.MuiCard-root{
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
